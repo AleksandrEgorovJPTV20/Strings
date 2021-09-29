@@ -6,12 +6,16 @@ The quick brown fox jumps over the lazy dog
 Aleksandr Egorov JPTV20
  */
 package strings;
+import java.util.Scanner;
 
 public class Strings {
 
     
     public static void main(String[] args) {
-        String text = "The quick brown fox jumps over the lazy dog"; //Переменная строка text, только состоящая из символов, неизменяемая.
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Введите текст на английском языке: ");
+        String text = scan.nextLine();
+//        String text = "The quick brown fox jumps over the lazy dog"; //Переменная строка text, только состоящая из символов, неизменяемая.
         int count = 0; //Переменная для хранения числа букв алфавита
         
         //Преобразование строки в массив символов.
